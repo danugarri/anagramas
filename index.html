@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+   
+    <title>Validador de anagramas</title>
+</head>
+<body>
+    <header>
+         <h1 id="app-title">ANAGRAMA</h1>
+    </header>
+    <form id="form">
+        <label for="word1">Escribe una palabra</label>
+        <input type="text" name="word1" />
+         <label for="word2">Escribe otra palabra</label>
+        <input type="text" name="word2" />
+        <input type="submit" value="Validar">
+    </form>
+    <h2 id="solution"></h2>
+    <footer>
+        <button class="accordion">¿Qu&eacute; es un anagrama?</button>
+        <div class="panel">
+            <p>Un anagrama es una palabra que resulta de la transposición de letras de otra palabra. 
+                Dicho de otra forma, una palabra es anagrama de otra si las dos tienen las mismas letras,
+                con el mismo número de apariciones, pero en un orden diferente.</p>
+            </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
