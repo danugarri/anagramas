@@ -35,7 +35,32 @@ const handleSubmit = (event) =>{
       let arrayAnagrama2= [];
       for(let i=0;i<anagrama1.length;i++){
         // switch to handle ´ special spanish caracter
-        
+        //anagrma1
+        switch(arrayAnagrama1[i]){
+          case 'á':
+             arrayAnagrama1[i]=a;
+          case 'é':
+             arrayAnagrama1[i]=e;
+          case 'ó':
+             arrayAnagrama1[i]=o;
+          case 'í':
+             arrayAnagrama1[i]=i;
+          default:
+             "";
+        }
+          //anagrma2
+        switch(arrayAnagrama2[i]){
+          case 'á':
+             arrayAnagrama2[i]=a;
+          case 'é':
+             arrayAnagrama2[i]=e;
+          case 'ó':
+             arrayAnagrama2[i]=o;
+          case 'í':
+             arrayAnagrama2[i]=i;
+          default:
+             "";
+        }
         //pushing each letter
         arrayAnagrama1.push(anagrama1.charAt(i));
         arrayAnagrama2.push(anagrama2.charAt(i));
