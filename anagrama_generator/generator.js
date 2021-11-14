@@ -56,11 +56,15 @@ const handleSubmit = (event) =>{
                  //possible anagramas
                  anagramas.push(sortedArray.join(""));
                  console.log(anagramas);
-                 //avoiding posible angrama be as the input word
+
+                 //avoiding possible angrama being as the input word
                  const filteredAnagrama = anagramas.filter(elem => elem !==anagrama1)
                  //display on the page
-                solution.innerHTML = filteredAnagrama.join('</br>');
-                    
+                 if(filteredAnagrama.filter(elem => filteredAnagrama[elem] !==filteredAnagrama[elem])){
+
+                     solution.innerHTML = filteredAnagrama.join('</br>');
+                 }
+                 
                 }
         }
     }
