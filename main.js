@@ -29,11 +29,13 @@ const handleSubmit = (event) =>{
     console.log(input2.value);
     //handling inputs
     if(input1.value !== ""|| input2.value !== ""){
-         const anagrama1 = input1.value.toLowerCase();
-    const anagrama2 = input2.value.toLowerCase();
-    let arrayAnagrama1= [];
-    let arrayAnagrama2= [];
-    for(let i=0;i<anagrama1.length;i++){
+      const anagrama1 = input1.value.toLowerCase();
+      const anagrama2 = input2.value.toLowerCase();
+      let arrayAnagrama1= [];
+      let arrayAnagrama2= [];
+      for(let i=0;i<anagrama1.length;i++){
+        // switch to handle ´ special spanish caracter
+        
         //pushing each letter
         arrayAnagrama1.push(anagrama1.charAt(i));
         arrayAnagrama2.push(anagrama2.charAt(i));
