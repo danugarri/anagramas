@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+   
+    <title>Gnerador de anagramas</title>
+</head>
+<body>
+    <header>
+         <h1 id="app-title"> Generador de ANAGRAMAS</h1>
+    </header>
+    <form id="form">
+        <label for="word1">Escribe una palabra</label>
+        <input type="text" name="word1" />
+       
+        <input type="submit" value="Generar">
+    </form>
+    <div id="solution-container">
+        <h3 id = 'h3'></h3>
+    </div>
+    <h2 id="solution"></h2>
+    <script  src="generator.js"></script>
+    <script  src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
