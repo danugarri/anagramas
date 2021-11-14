@@ -10,7 +10,7 @@ const h3 = document.getElementById('h3');
 solutionContainer.appendChild(h3)
 
 
-
+//event handler
 const handleSubmit = (event) =>{
     event.preventDefault();
     //inputs values
@@ -60,13 +60,7 @@ const handleSubmit = (event) =>{
                
                  solution.innerHTML = anagramas.join('</br>');
                 }
-                
-
         }
-    
-    
-  
-   
     }
     else{
         swal("No has introducido 1 palabra");
